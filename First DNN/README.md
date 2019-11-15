@@ -20,3 +20,7 @@
       1) GlobalRF links to region of initial input image.<br>
       2) LocalRF is region/pixels from the previous layer which generates current pixel.
 </ol>
+
+<h3> Final Test Score</h3>
+ <p> Accuracy - 99.16%</p>
+   
