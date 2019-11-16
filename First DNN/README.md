@@ -1,4 +1,4 @@
-<h2><b>Important terms in Computer Vision -</b></h2><br>
+ <h2><b>Important terms in Computer Vision -</b></h2><br>                                    
 <ol>
   <li><b> Convolution </b></li>
       Operation wherein we use feature extractors(kernels) to extract different set of features by convolving kernels over original input image 
@@ -24,3 +24,4 @@
 <h3> Final Test Score</h3>
  <p> Accuracy - 99.16%</p>
    
+Notes By - Siddharth Surange
