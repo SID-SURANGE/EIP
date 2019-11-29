@@ -1,5 +1,4 @@
-<h1> Session 3 Assignment </h1>
-<hr>
+<h1> Session 3 Assignment </h1><hr>
 <h3> Base Model accuracy </h3> 
 <p> Accuracy on test data is: 82.64 </p>
 <hr>
@@ -12,46 +11,47 @@
 model1 = Sequential()<br>
 
 <b> #BLOCK 1 </b><br>
-model1.add(SeparableConv2D(64, kernel_size=(3, 3), activation='relu', input_shape=(32, 32, 3), padding='same')) #32*32*64<br>
+model1.add(SeparableConv2D(64, kernel_size=(3, 3), activation='relu', input_shape=(32, 32, 3), padding='same'))<B>  Output - 32/32/64, RF-3 </B><br>
 model1.add(BatchNormalization())<br>
 
-model1.add(SeparableConv2D(64, kernel_size=(3, 3), activation='relu'))# 30*30*64<br>
-model1.add(BatchNormalization())<br>
-model1.add(Dropout(0.1))<br>
-
-model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu', padding='same'))# 30*30*128<br>
+model1.add(SeparableConv2D(64, kernel_size=(3, 3), activation='relu')) <b>Output - 30/30/64, RF-5</B><br>
 model1.add(BatchNormalization())<br>
 model1.add(Dropout(0.1))<br>
 
-model1.add(MaxPooling2D(pool_size=(2, 2))) #15*15*128<br>
+model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu', padding='same'))<B> Output - 30/30/128, RF-7</b><br>
+model1.add(BatchNormalization())<br>
+model1.add(Dropout(0.1))<br>
+
+model1.add(MaxPooling2D(pool_size=(2, 2)))<B>Output- 15/15/128 , RF - 8</B><br> 
 
 <b>#BLOCK 2</b><br>
-model1.add(Conv2D(64, 1, 1 , activation='relu')) #15*15*64<br>
+model1.add(Conv2D(64, 1, 1 , activation='relu')) <B> Output 15/15/64, RF - 8</B><br>
 model1.add(BatchNormalization())<br>
 model1.add(Dropout(0.1))<br>
 
-model1.add(SeparableConv2D(96, kernel_size=(3, 3), activation='relu',padding='same')) #15*15*96<br>
+model1.add(SeparableConv2D(96, kernel_size=(3, 3), activation='relu',padding='same')) <B>Output - 15/15/96 , RF - 12</B><br>
 model1.add(BatchNormalization())<br>
 model1.add(Dropout(0.1))<br>
 
-model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu')) #13*13*128<br>
+model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu')) <B>Output - 13/13/128 RF - 16</B><br>
 model1.add(BatchNormalization())<br>
 model1.add(Dropout(0.15))<br>
 
-model1.add(MaxPooling2D(pool_size=(2, 2))) #6*6*128<br>
+model1.add(MaxPooling2D(pool_size=(2, 2))) <B>Output - 6/6/128, RF - 18</b><br>
 
 <b>#FINAL BLOCK</b><br>
-model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu')) #4*4*128<br>
+model1.add(SeparableConv2D(128, kernel_size=(3, 3), activation='relu')) <b> Output - 4/4/128, RF - 26</B><br>
 model1.add(BatchNormalization())<br>
 model1.add(Dropout(0.15))<br>
 
-model1.add(SeparableConv2D(10, kernel_size=(3, 3), activation='relu')) #2*2*10<br>
+model1.add(SeparableConv2D(10, kernel_size=(3, 3), activation='relu')) <B> Output - 2/2/10 , RF - 34 </B><br>
 model1.add(BatchNormalization())<br>
 
 model1.add(GlobalAveragePooling2D()) #1*1*10<br>
 model1.add(Activation('softmax'))<br>
 </p>
 <hr>
+
 <h3> Epoch Logs </h3>
 <p><b>
  Epoch 1/50<br>
