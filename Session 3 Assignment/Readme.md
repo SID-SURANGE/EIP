@@ -5,7 +5,7 @@
 <h3> Final Model accuracy </h3> 
 <p> Last epoch val Accuracy - 84.19 </p>
 <p> Overall highest val Accuracy - 85.29 </p>
-<P> Total parameters - 65101 </P>
+<P><b> Total parameters</b> - 65101 </P>
 <hr>
 <h3> Final Model arhitecture </h3>
 <p>
