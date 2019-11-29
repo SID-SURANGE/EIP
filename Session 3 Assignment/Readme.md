@@ -47,7 +47,7 @@ model1.add(Dropout(0.15))<br>
 model1.add(SeparableConv2D(10, kernel_size=(3, 3), activation='relu')) <B> Output - 2/2/10 , RF - 34 </B><br>
 model1.add(BatchNormalization())<br>
 
-model1.add(GlobalAveragePooling2D()) #1*1*10<br>
+model1.add(GlobalAveragePooling2D()) #1/1/10<br>
 model1.add(Activation('softmax'))<br>
 </p>
 <hr>
