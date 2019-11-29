@@ -3,6 +3,10 @@
 <h3> Base Model accuracy </h3> 
 <p> Accuracy on test data is: 82.64 </p>
 <hr>
+<h3> Final Model accuracy </h3> 
+<p> Last epoch val Accuracy - 84.19 </p>
+<p> Overall highest val Accuracy - 85.29 </p>
+<hr>
 <h3> Final Model arhitecture </h3>
 <p>
 model1 = Sequential()<br>
