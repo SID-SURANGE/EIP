@@ -8,9 +8,7 @@
 <P><b> Total parameters</b> - 65101 </P>
 <hr>
 <h3> Final Model arhitecture </h3>
-'''
-model1 = Sequential()
-'''
+```
 <p>
 model1 = Sequential()<br>
 
@@ -54,9 +52,11 @@ model1.add(BatchNormalization())<br>
 model1.add(GlobalAveragePooling2D()) #1/1/10<br>
 model1.add(Activation('softmax'))<br>
 </p>
+```
 <hr>
 
 <h3> Epoch Logs </h3>
+```
 <p><b>
 Epoch 1/50<br>
 390/390 [==============================] - 27s 70ms/step - loss: 1.5205 - acc: 0.4752 - val_loss: 1.1740 - val_acc: 0.5980<br>
@@ -160,3 +160,4 @@ Epoch 50/50<br>
 390/390 [==============================] - 25s 63ms/step - loss: 0.3490 - acc: 0.8780 - val_loss: 0.4638 - val_acc: 0.8465<br>
 Model took 1249.96 seconds to train
  </b></p>
+```
