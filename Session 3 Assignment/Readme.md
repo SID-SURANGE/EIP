@@ -8,7 +8,6 @@
 <P><b> Total parameters</b> - 65101 </P>
 <hr>
 <h3> Final Model arhitecture </h3>
-```
 <p>
 model1 = Sequential()<br>
 
