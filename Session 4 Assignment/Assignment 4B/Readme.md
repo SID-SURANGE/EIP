@@ -132,3 +132,5 @@ Epoch 49/50
 Epoch 50/50
 782/782 [==============================] - 43s 55ms/step - loss: 0.3398 - acc: 0.9250 - val_loss: 0.4576 - val_acc: 0.8938
 ```
+
+<h4> Siddharth Surange </h4>
