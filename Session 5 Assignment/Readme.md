@@ -17,6 +17,7 @@ Trying different Models
   <li>Batch size - 32</li>
   <li>Augmentation used</li>
   <li> LR Scheduler not shown drastic changes to accuracy </li>
+  <li> Accuracy - Not good results </li>
 
 
 
